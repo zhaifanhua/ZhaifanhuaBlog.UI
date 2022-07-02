@@ -10,6 +10,9 @@ jobs:
   build:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./ZhaifanhuaBlog.UI
 
     strategy:
       matrix:
@@ -18,12 +21,11 @@ jobs:
 
     steps:
     # 拉取代码
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - run: echo $path
     - run: yarn
     - run: yarn dev
