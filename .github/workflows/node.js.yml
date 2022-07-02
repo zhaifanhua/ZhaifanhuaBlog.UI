@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./ZhaifanhuaBlog.UI
+        working-directory: .\ZhaifanhuaBlog.UI\
 
     strategy:
       matrix:
