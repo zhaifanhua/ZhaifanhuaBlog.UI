@@ -13,9 +13,6 @@ jobs:
   build:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: .\ZhaifanhuaBlog.UI\
 
     strategy:
       matrix:
@@ -29,9 +26,6 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install
-      run: yarn  --check-files
-    - name: Build
-      run: yarn dev
-    - name: Test
-      run: yarn test
+        cache: 'yarn'
+    - run: yarn
+    - run: yarn test
