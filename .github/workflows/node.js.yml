@@ -1,10 +1,13 @@
 # 名称
 name: ZhaifanhuaBlog.UI
 
-# 触发条件：在 push 到 main 分支后
+# 触发条件：在 push 和 pull 到 main 分支后
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 # 任务
 jobs:
   build:
@@ -22,8 +25,13 @@ jobs:
     # 拉取代码
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    # 环境
+    - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Install
     - run: yarn  --check-files
+    - name: Build
     - run: yarn dev
+    - name: Test
+    - run: yarn test
