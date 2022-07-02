@@ -26,8 +26,6 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
-        cache-dependency-path: ZhaifanhuaBlog.UI/package.json
     - name: Install
       run: yarn
     - name: Dev
