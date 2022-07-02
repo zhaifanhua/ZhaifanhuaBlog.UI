@@ -13,7 +13,6 @@ jobs:
   build:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
-    
 
     strategy:
       matrix:
@@ -27,9 +26,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+        cache-dependency-path: ZhaifanhuaBlog.UI/package.json
     - name: Install
       run: yarn
-    - name: Build
-      run: yarn build
     - name: Dev
       run: yarn dev
