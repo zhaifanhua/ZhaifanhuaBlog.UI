@@ -13,6 +13,10 @@ Vue3
 
 Vite（vue-cli的替代品）
 
-vue-router
+Vue-Router
 
 Pinia（Vuex的替代品）
+
+Sass
+
+Element Plus
