@@ -1,5 +1,5 @@
-# ZhaifanhuaBlog.UI
-This is the front end of the ZhaiFanhuaBlog application, which is based on vue3.
+# ZhaifanhuaBlog.UI.Manage
+This is the front-end management of the ZhaiFanhuaBlog application, which is based on vue3.
 
 
 

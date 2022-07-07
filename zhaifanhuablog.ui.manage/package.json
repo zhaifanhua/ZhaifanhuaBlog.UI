@@ -1,5 +1,5 @@
 {
-  "name": "zhaifanhuablog-ui",
+  "name": "zhaifanhuablog.ui.manage",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -8,9 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "pinia": "^2.0.14",
-    "vue": "^3.2.25",
-    "vue-router": "^4.0.15"
+    "vue": "^3.2.25"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
