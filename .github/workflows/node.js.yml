@@ -36,7 +36,7 @@ jobs:
         run: yarn build
 
   build_display:
-    name: build_manage
+    name: build_display
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     defaults:
