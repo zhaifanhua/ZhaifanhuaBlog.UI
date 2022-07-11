@@ -1,5 +1,5 @@
 # 名称
-name: ZhaifanhuaBlog.UI.Manage
+name: ZhaifanhuaBlog.UI
 
 # 触发条件：在 push 和 pull 到 main 分支后
 on:
@@ -16,6 +16,32 @@ jobs:
     defaults:
       run:
         working-directory: ./zhaifanhuablog.ui.manage/
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      # 拉取代码
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        # 环境
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install
+        run: yarn install --frozen-lockfile
+      - name: Build
+        run: yarn build
+
+# 任务
+jobs:
+  build:
+    # 服务器环境：最新版 Ubuntu
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./zhaifanhuablog.ui.display/
 
     strategy:
       matrix:

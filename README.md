@@ -1,5 +1,6 @@
-# ZhaifanhuaBlog.UI.Manage
-This is the front-end management of the ZhaiFanhuaBlog application, which is based on vue3.
+# ZhaifanhuaBlog.UI
+
+This is the front-end of the ZhaifanhuaBlog application, which is based on vue3.
 
 
 
@@ -18,5 +19,7 @@ Vue-Router
 Pinia（Vuex的替代品）
 
 Sass
+
+Naive-UI
 
 Element Plus

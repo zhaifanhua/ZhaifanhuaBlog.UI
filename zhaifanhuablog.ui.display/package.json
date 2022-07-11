@@ -1,18 +1,14 @@
 {
-  "name": "zhaifanhuablog.ui.manage",
+  "name": "zhaifanhuablog.ui.display",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.25",
-    "vue-router": "^4.1.1",
-    "pinia": "^2.0.14",
-    "sass": "^1.53.0",
-    "element-plus": "^2.2.8"
+    "vue": "^3.2.25"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
