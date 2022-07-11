@@ -10,7 +10,8 @@ on:
 
 # 任务
 jobs:
-  build:
+  build_manage:
+    name: build_manage
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     defaults:
@@ -34,9 +35,8 @@ jobs:
       - name: Build
         run: yarn build
 
-# 任务
-jobs:
-  build:
+  build_display:
+    name: build_manage
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     defaults:
