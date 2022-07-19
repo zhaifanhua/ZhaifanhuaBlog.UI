@@ -20,6 +20,8 @@ Pinia（Vuex的替代品）
 
 Sass
 
+Axios
+
 Naive-UI
 
 Element Plus
