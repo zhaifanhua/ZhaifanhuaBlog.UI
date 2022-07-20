@@ -1,7 +1,11 @@
 {
   "name": "zhaifanhuablog.ui.display",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": {
+    "name": "ZhaiFanhua",
+    "email": "me@zhaifanhua.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -9,7 +13,15 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "vue": "^3.2.25"
+    "crypto-js": "^4.1.1",
+    "echarts": "^5.3.3",
+    "naive-ui": "^2.31.0",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.14",
+    "sass": "^1.53.0",
+    "unplugin-vue-components": "^0.21.1",
+    "vue": "^3.2.25",
+    "vue-router": "^4.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",

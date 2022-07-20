@@ -6,12 +6,6 @@
     "name": "ZhaiFanhua",
     "email": "me@zhaifanhua.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zhaifanhua/ZhaifanhuaBlog.UI",
-    "issues": "https://github.com/zhaifanhua/ZhaifanhuaBlog.UI/issues",
-    "license": "MIT"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
