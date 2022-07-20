@@ -2,6 +2,16 @@
   "name": "zhaifanhuablog.ui.manage",
   "private": true,
   "version": "0.0.1",
+  "author": {
+    "name": "ZhaiFanhua",
+    "email": "me@zhaifanhua.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhaifanhua/ZhaifanhuaBlog.UI",
+    "issues": "https://github.com/zhaifanhua/ZhaifanhuaBlog.UI/issues",
+    "license": "MIT"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -9,7 +19,10 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "crypto-js": "^4.1.1",
+    "echarts": "^5.3.3",
     "element-plus": "^2.2.8",
+    "nprogress": "^0.2.0",
     "pinia": "^2.0.14",
     "sass": "^1.53.0",
     "vue": "^3.2.25",
